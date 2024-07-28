@@ -1,0 +1,45 @@
+/* src/assets/scss/profilepopup.scss */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "BMJUA";
+
+  .popup-content {
+    position: absolute;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    z-index: 1000;
+
+    &.position-adjusted {
+      right: 80px;
+      top: 60px;
+
+      h3 {
+        margin-top: 0;
+        font-size: 24px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin: 10px 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
